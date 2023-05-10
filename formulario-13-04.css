@@ -1,0 +1,43 @@
+body{
+    background-image: linear-gradient(to right, rgb(255, 0, 212), rgb(149, 0, 248));
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box{
+    color: rgb(248, 182, 250);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+    border-radius: 15px;
+    width: 30%;
+}
+
+fieldset{
+    border: 3px solid rgb(129, 87, 197);
+}
+
+legend{
+    border: 2px solid rgb(78, 75, 255);
+    padding: 5%;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+}
+
+.inputBox{
+    position:relative
+}
+
+.inputUser{
+    background: none;
+    border: none;/*tirar a borda*/
+    border-bottom: 1px solid rgb(179, 149, 149);
+    outline: none;/*tirar a linha de fora do imput*/
+    color: rgb(170, 177, 243);
+    font-size: 15px;
+    width: 100%;/*comprimento da linha*/
+    letter-spacing: 2px;/*espaço entre cara caracter do imput*/
+}
