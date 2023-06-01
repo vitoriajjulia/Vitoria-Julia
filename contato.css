@@ -1,6 +1,6 @@
 
 header{
-    background-image: linear-gradient(rgb(0, 0, 0), rgb(94, 94, 94), rgb(197, 195, 197));
+    background-image: linear-gradient(rgb(255, 0, 0), rgb(0, 0, 0));
         padding: 10px;
         color: white;
         display: flex;
@@ -21,11 +21,40 @@ header{
         .titulo-principal{
             position: absolute;
             text-align: center;
-            top: 18%;
-            left: 50%;
+            top: 32%;
+            left: 40%;
             transform: translate(-90%, -220%);
-            font-size: 45px;
+            font-size: 55px;
+            text-shadow: 5px;
+
         }
+    nav{
+        position: absolute;
+        top: 20%;
+        right: 50px;
+    }
+
+    nav li {
+        display: inline;
+        margin: 0 0 0 15px;
+    }
+
+    nav a {
+        text-transform: uppercase;
+        color: #ffffff;
+        /*font-weight:bold;*/
+        font-size: 22px;
+        text-decoration: none;
+        font-family: gagalin;
+        font
+    }
+
+     nav a:hover {
+        color: #C78C19;
+        text-decoration: uderline;
+        top: 30%;
+
+     } 
         img{
             height: 150px;
             width: 150px;
@@ -76,7 +105,7 @@ header{
         }
     
         footer{
-         background-image: url("comaretto.png");
+         background-color:rgb(238, 121, 121) ;
          text-align: center;
          padding: 10px 0;
          
