@@ -1,0 +1,90 @@
+body{
+    background-image: linear-gradient(to right, rgb(9, 38, 255), rgb(239, 196, 218));
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box{
+    color:rgb(25, 25, 0);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(185, 214, 218);
+    padding: 19px;
+    border-radius: 10px;
+    width: 60%;
+}
+
+fieldset{
+    border: 3px solid rgb(144, 18, 127);
+}
+
+legend{
+    border: 1px solid rgb(245, 121, 243);
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(172, 48, 137);
+    border-radius: 8px;
+}
+
+.inputBox{
+    position:relative
+}
+
+.inputUser{
+    background: none;
+    border: none;/*tirar a borda*/
+    border-bottom: 1px solid rgb(9, 1, 1);
+    outline: none;/*tirar a linha de fora do input*/
+    color: rgb(8, 0, 0);
+    font-size: 20px;
+    width: 100%;/*comprimento da linha*/
+    letter-spacing: 2px;/*espaço entre caracter do input*/
+}
+
+.labelinput{  /* animação das labels - nessa parte, as labels irão
+        se encaixar dentro dos inputs*/
+position: absolute; /* vai ocupar apenas o elemento dela mesma */
+top: 0px;
+left: 0px;
+pointer-events: none;/* qualquer lugar que eu clicar dentro
+                    do input, ele vai executar a ação */
+transition: 5px;/* transição - para criaçao de efeitos
+                de animação personalizado*/
+}
+
+/*Quando clicar no input eu quero que a label vai para cima
+do input - por isso a ação é no input*/
+
+.inputUser:focus ~ .labelinput, /*executar uma ação na nossa label*/
+.inputUser:valid ~ .labelinput{ /*qdo o input tiver válido, eu quero
+                            que ele execute essa ação para a
+                            label - a informação irá permanecer
+                            no input, senão irá ficar por cima*/
+top: -20px;
+font-size: 20px;
+color: rgb(2, 0, 0);
+}
+#data_nascimento{
+    border:none;
+    padding: 8px;
+    border-radius: 25px;
+    outline: none;
+    font-size: 15px;
+    background-image: linear-gradient(to right, rgb(197, 156, 231), rgb(116, 138, 218));
+    color: rgb(14, 0, 0)
+}
+#enviar{
+    background-image: linear-gradient(to right, rgb(149, 109, 223), rgb(30, 53, 87));
+    width: 100%;
+    border: none;/*tirar a borda do botão enviar*/
+    padding: 18px;
+    color:rgb(245, 245, 245);
+    font-size: 19px;
+    cursor: pointer;/*quando passar o mouse por cima do botão enviar, muda o cursor*/
+    border-radius: 10px;
+}
+#enviar:hover{
+    background-image: linear-gradient(to right, rgb(204, 170, 243), rgb(192, 120, 235));
+    /*Qdo passar o mouse por cima do botão enviar, irá aplicar azul um pouco mais escuro*/
+}
